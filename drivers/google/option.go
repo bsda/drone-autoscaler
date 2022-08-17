@@ -162,3 +162,10 @@ func WithRateLimit(limitAmount int) Option {
 		p.rateLimiter = rate.NewLimiter(limit, 1)
 	}
 }
+
+// WithMachineImage returns an option to set the image.
+func WithProvisioningModel(provisioningmodel string) Option {
+	return func(p *provider) {
+		p.provisioningModel = provisioningmodel
+	}
+}

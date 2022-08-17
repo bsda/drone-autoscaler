@@ -10,3 +10,7 @@ go build \
     -ldflags "-extldflags \"-static\" $COMMIT $VERSION"   \
 	-o release/linux/amd64/drone-autoscaler \
 	github.com/drone/autoscaler/cmd/drone-autoscaler
+
+#pwd
+#find . -name drone-autoscaler -ls
+#find release -ls
